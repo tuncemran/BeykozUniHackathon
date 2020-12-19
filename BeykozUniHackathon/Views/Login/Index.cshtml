@@ -1,0 +1,31 @@
+﻿
+@{
+    ViewBag.Title = "Login Page";
+}
+<link rel="stylesheet" href="~/Content/Styles/LoginStyle.css">
+<script type="text/javascript" src="~/Scripts/LoginScripts/Backend.js"></script>
+<script type="text/javascript" src="~/Scripts/LoginScripts/Frontend.js"></script>
+<body onload="PageOnLoad()">
+<div class="loginContainer">
+    <h1 style="margin-top:5vh; margin-bottom: 5vh;text-align: center;">Logo</h1>
+    <div class="row">
+        <label for="userName" class="textInputLabel"> Kullanıcı Adı:</label>
+        <input name="username" type="text" placeholder="tuncemran" id="userName" class="textInputClass">
+    </div>
+
+    <div class="row">
+        <label for="password" class="textInputLabel">Şifre:</label>
+        <input name="password" type="password" placeholder="*****" id="password" class="textInputClass">
+    </div>
+    <div class="row">
+        <div class="spinner"></div>
+        <h4 id="loginText"></h4>
+    </div>
+    <div class="row">
+    <button class="loginButton" onclick="LoginEvent()">
+            Giriş Yap
+        </button>    
+    </div>
+    
+</div>
+</body>

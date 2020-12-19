@@ -1,0 +1,52 @@
+﻿body {
+    
+}
+.loginContainer {
+    height: 50vh;
+    margin: auto;
+    margin-top: 20vh;
+    width: 70vw;
+    box-shadow: 3px 3px 5px 6px #d9d9d9;
+    margin-bottom: 10vh;
+}
+
+.row {
+    width: 80%;
+    padding-bottom: 1vh;
+    margin:auto;
+    margin-top: 10vh;
+}
+.textInputClass {
+    width: 45%;
+    float: left;
+    text-align: left;
+}
+.textInputLabel{
+    width: 45%;
+    float: left;
+    text-align: right;
+}
+.loginButton {
+    margin:auto;
+}
+
+.spinner {
+    margin:auto;
+    align-self: center;
+    border-radius: 50%;
+    border: 8px solid red;
+    border-top: 8px solid green;
+    width: 5vh;
+    height: 5vh;
+    display: none;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
